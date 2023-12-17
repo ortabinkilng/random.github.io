@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Video Link</title>
+  <style>
+      body{
+          text-align: center;
+          padding: 325px 0;
+      }
+  </style>
+</head>
+<body>
+
+<button onclick="getRandomVideo()">Get Random Video</button>
+
+<script>
+  function getRandomVideo() {
+    const videoLinks = [
+      'https://jav.guru/random/'
+    ];
+
+    const randomVideoLink = videoLinks[Math.floor(Math.random() * videoLinks.length)];
+
+    window.open(randomVideoLink, '_blank');
+  }
+</script>
+
+</body>
+</html>
